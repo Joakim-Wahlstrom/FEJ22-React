@@ -1,7 +1,7 @@
 
 import CustomerRow from './CustomerRow'
 
-const CustomerList = ({ customers }) => {
+const CustomerList = ({ customers, removeCustomer }) => {
 
 
 
@@ -17,7 +17,17 @@ const CustomerList = ({ customers }) => {
       <tbody>
         
         {
-          customers.map(customer => <CustomerRow key={customer.id} customer={customer} />)
+          customers.map(customer => <CustomerRow key={customer.id} customer={customer} removeCustomer={removeCustomer} />)
+        }
+
+        {
+          !customers.length && (
+            <tr>
+              <td>No customers to show</td>
+              <td></td>
+              <td></td>
+            </tr>
+          )
         }
 
       </tbody>

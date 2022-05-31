@@ -22,12 +22,18 @@ const App = () => {
     })
   }
 
+  const removeCustomer = (id) => {
+    setCustomers(oldCustomers => {
+      return oldCustomers.filter(customer => customer.id !== id)
+    })
+  }
+
   return (
     <div>
       <Header title="Customer List" />
       <div className="container mt-5">
         <AddCustomerForm addCustomer={addCustomer} />
-        <CustomerList customers={customers} />
+        <CustomerList customers={customers} removeCustomer={removeCustomer} />
       </div>
     </div>
   )
