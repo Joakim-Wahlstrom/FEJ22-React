@@ -17,3 +17,7 @@
 .modal p {
   padding-block: 1rem;
 }
+.modal .sales-btn {
+  background-color: red;
+  font-size: 1.3rem;
+}

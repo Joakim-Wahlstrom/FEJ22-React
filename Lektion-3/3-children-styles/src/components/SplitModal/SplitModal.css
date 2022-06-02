@@ -1,0 +1,15 @@
+.split {
+  margin: 200px auto;
+  max-width: 500px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.split .left,
+.split .right {
+  padding: 2rem;
+  flex: 1;
+}
+.split .left {
+  border-right: 1px solid #ddd;
+}
