@@ -1,0 +1,11 @@
+.card {
+  border: 1px solid #eee;
+  box-shadow: 3px 3px 5px #888888;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+.card button {
+  background-color: #333;
+}

@@ -1,0 +1,19 @@
+.modal-bg {
+  position: fixed;
+  inset: 0;
+  background-color: #0000003a;
+}
+.modal {
+  background-color: #fff;
+  max-width: 500px;
+  margin: 10vh auto;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.modal h2 {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #dbdbdb;
+}
+.modal p {
+  padding-block: 1rem;
+}
