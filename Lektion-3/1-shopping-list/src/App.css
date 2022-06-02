@@ -34,4 +34,65 @@ body {
   cursor: pointer;
   transform: translateY(-50%);
 }
-
+.ShoppingList {
+  height: 75vh;
+  overflow: auto;
+}
+.ListItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e7e7e7;
+  padding-block: .3rem;
+}
+.complete {
+  text-decoration: line-through;
+  color: #888;
+}
+.product-title {
+  cursor: pointer;
+  user-select: none;
+}
+.btn {
+  border: 0;
+  background-color: transparent;
+  color: #858585;
+  cursor: pointer;
+}
+.btn-change:hover {
+  color: #58ad9f;
+}
+.btn-delete:hover {
+  color: #ad5858;
+}
+.btn-delete {
+  margin-left: .5rem;
+}
+.AddItemForm {
+  display: flex;
+}
+.AddItemForm input {
+  width: 100%;
+  font-size: 1rem;
+  padding: .3em .5em;
+  border: 1px solid #e7e7e7;
+  border-radius: .7rem 0 0 .7rem;
+  outline: none;
+}
+.AddItemForm input:focus {
+  border: 1px solid #9a9a9a;
+}
+.AddItemForm button {
+  border-radius: 0 .7rem .7rem 0;
+  padding: .5em .8em;
+  cursor: pointer;
+  background-color: #666;
+  border: 0;
+  color: #fff;
+}
+.error {
+  color: #ad5858;
+  font-size: .9rem;
+  margin: .5rem;
+  text-align: center;
+}

@@ -1,8 +1,16 @@
 import React from 'react'
+import ListItem from './ListItem'
 
-const ShoppingList = () => {
+const ShoppingList = ({ items, toggleComplete }) => {
   return (
-    <div>ShoppingList</div>
+    <div className='ShoppingList'>
+      {
+        items &&
+        items.map(item => (
+          <ListItem key={item.id} item={item} toggleComplete={toggleComplete} />
+        ))
+      }
+    </div>
   )
 }
 
