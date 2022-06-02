@@ -1,0 +1,22 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Take out the trash",
+      "completed": false,
+      "user": 1
+    },
+    {
+      "id": 2,
+      "title": "Clean the house",
+      "completed": false,
+      "user": 1
+    },
+    {
+      "id": 3,
+      "title": "Dinner with wife",
+      "completed": false,
+      "user": 2
+    }
+  ]
+}
