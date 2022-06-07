@@ -41,5 +41,22 @@
 .product-item {
   border: 1px solid #888888;
   padding: 1rem;
-  
+  border-radius: 1rem;
+  color: #333;
+  text-decoration: none;
+}
+.red {
+  color: red;
+}
+.product-item h2 {
+  margin-bottom: 1rem;
+}
+.product-title {
+  text-align: center;
+  font-size: 3rem;
+  margin: 3rem;
+}
+.product-price {
+  font-size: 2rem;
+  margin-top: 2rem;
 }
