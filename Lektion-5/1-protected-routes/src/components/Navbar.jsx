@@ -1,7 +1,11 @@
-import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import { useAuthContext } from '../hooks/useAuthContext'
+
 
 const Navbar = ({ title }) => {
+
+  const { isAuthenticated } = useAuthContext()
+
   return (
     <nav className='navbar'>
       <div className="container d-flex">
@@ -9,7 +13,8 @@ const Navbar = ({ title }) => {
         <ul className='d-flex'>
           <li><NavLink to="/">Home</NavLink></li>
           <li><NavLink to="/login">Login</NavLink></li>
-          <li><NavLink to="/admin">Admin</NavLink></li>
+          {isAuthenticated && <li><NavLink to="/admin">Admin</NavLink></li>}
+          <li>{isAuthenticated ? 'LoggedIn' : 'LoggedOUT'}</li>
         </ul>
       </div>
     </nav>
