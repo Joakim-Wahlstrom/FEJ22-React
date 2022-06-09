@@ -34,3 +34,57 @@ a {
 a.active {
   text-decoration: underline;
 }
+
+.todos {
+  margin-top: 2rem;
+}
+.todo {
+  margin-bottom: .5rem;
+  box-shadow: 2px 2px 5px #33333350;
+  padding: .5rem;
+  border-radius: .5rem;
+}
+.todo button {
+  background-color: red;
+  color: #fff;
+  border: 0;
+  width: 20px;
+  aspect-ratio: 1;
+  font-weight: 600;
+  border-radius: .3rem;
+  cursor: pointer;
+}
+.completed {
+  text-decoration: line-through;
+  color: #7a7a7a;
+}
+
+.admin h1, .admin h2 { text-align: center;}
+
+.addTodoForm {
+  margin-top: 3rem;
+}
+
+.addTodoForm input,
+.addTodoForm button{
+  display: block;
+  width: 100%;
+  padding: .3rem;
+  outline: none;
+  border-radius: .3rem;
+}
+.addTodoForm input {
+  border: 1px solid #9a9a9a;
+
+}
+.addTodoForm input:focus {
+  border-color:#090909;
+}
+.addTodoForm button {
+  margin-top: 1rem;
+  border: 0;
+  background-color: darkslategray;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}

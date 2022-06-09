@@ -12,9 +12,9 @@ const Navbar = ({ title }) => {
         <Link to="/"><h1>{title}</h1></Link>
         <ul className='d-flex'>
           <li><NavLink to="/">Home</NavLink></li>
-          <li><NavLink to="/login">Login</NavLink></li>
           {isAuthenticated && <li><NavLink to="/admin">Admin</NavLink></li>}
-          <li>{isAuthenticated ? 'LoggedIn' : 'LoggedOUT'}</li>
+          {!isAuthenticated && <li><NavLink to="/login">Login</NavLink></li>}
+          {/* <li>{isAuthenticated ? 'LoggedIn' : 'LoggedOUT'}</li> */}
         </ul>
       </div>
     </nav>
