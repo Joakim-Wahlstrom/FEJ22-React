@@ -9,7 +9,7 @@ const Posts = () => {
 
   useEffect(() => {
     dispatch(getPosts())
-  }, [])
+  }, [dispatch])
 
   // const posts = useSelector(state => state.posts.list)
   // const loading = useSelector(state => state.posts.loading)

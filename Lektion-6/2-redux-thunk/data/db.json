@@ -9,6 +9,16 @@
       "id": 2,
       "title": "Post 2",
       "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor officiis perferendis esse, doloribus molestiae iste nemo provident excepturi voluptatem incidunt eveniet, quaerat ex voluptates nulla quibusdam ipsum consectetur. Quo, earum."
+    },
+    {
+      "title": "test",
+      "body": "testar",
+      "id": 3
+    },
+    {
+      "title": "test2",
+      "body": "asfsdgsdgf",
+      "id": 4
     }
   ]
 }
