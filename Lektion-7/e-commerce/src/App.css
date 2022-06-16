@@ -4,3 +4,7 @@
 .cart-image {
   width: 100px;
 }
+.checkout_cart {
+  flex: 1;
+  margin-right: 2rem;
+}

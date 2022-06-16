@@ -11,7 +11,7 @@ const ShoppingCart = () => {
     </div>
   )
 
-  const { cart } = useSelector(state => state.shoppingCart)
+  const { cart, totalAmount } = useSelector(state => state.shoppingCart)
 
   return (
     <div>
@@ -27,11 +27,11 @@ const ShoppingCart = () => {
 
       <div className='d-flex justify-content-between align-items-center p-2'>
         <div>
-          <div>Total Price: 0</div>
+          <div>Total Price: {totalAmount}</div>
           <small className='text-muted'>ink. vat</small>
         </div>
         <div>
-          <Link to="/cart" className='btn btn-info'>Checkout</Link>
+          <Link to="/checkout" className='btn btn-info'>Checkout</Link>
         </div>
       </div>
     </div>

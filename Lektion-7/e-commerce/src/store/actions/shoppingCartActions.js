@@ -13,3 +13,10 @@ export const removeOne = id => {
     payload: id
   }
 }
+
+export const removeProduct = id => {
+  return {
+    type: actiontypes.shoppingCart.removeProduct,
+    payload: id
+  }
+}
