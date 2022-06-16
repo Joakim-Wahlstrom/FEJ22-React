@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import CartProduct from './CartProduct'
+import { useSelector } from 'react-redux'
 
 const ShoppingCart = () => {
 
@@ -10,11 +11,17 @@ const ShoppingCart = () => {
     </div>
   )
 
+  const { cart } = useSelector(state => state.shoppingCart)
+
   return (
     <div>
-      <CartProduct />
+      {
+        cart.map(product => (
+          <CartProduct key={product._id} item={product} />
+        ))
+      }
 
-      {emptyCart}
+      {!cart.length && emptyCart}
 
       <div className="dropdown-divider"></div>
 
