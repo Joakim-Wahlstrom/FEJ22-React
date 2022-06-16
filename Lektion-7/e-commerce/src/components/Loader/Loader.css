@@ -1,0 +1,21 @@
+.loader-container {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+}
+.loader {
+  margin: 10vh auto;
+  width: 60px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 10px solid transparent;
+  border-top-color: #00000060;
+  border-bottom-color: #00000060;
+
+  animation: spin .8s ease infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

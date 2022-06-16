@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import ShoppingCart from './ShoppingCart/ShoppingCart'
 
 const Navbar = () => {
   return (
@@ -45,10 +46,10 @@ const Navbar = () => {
               <span className="badge rounded-pill badge-notification bg-danger">1</span>
             </span>
             <ul
-              className="dropdown-menu dropdown-menu-end"
+              className="dropdown-menu dropdown-menu-end shopping-cart"
               aria-labelledby="navbarDropdownMenuLink"
             >
-              SHOPPINGCART
+              <ShoppingCart />
             </ul>
           </div>
 
